@@ -1,3 +1,5 @@
 "use strict";
 
-console.log("hello world");
+import pageLoad from "./page-load";
+
+pageLoad();
