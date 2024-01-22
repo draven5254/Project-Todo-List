@@ -21,4 +21,10 @@ export default function createTodo() {
   console.log(todo1.description);
   console.log(todo1.dueDate);
   console.log(todo1.priority);
+
+  const btn = document.querySelector(".task-btn");
+
+  btn.addEventListener("click", () => {
+    alert("Hello");
+  });
 }
