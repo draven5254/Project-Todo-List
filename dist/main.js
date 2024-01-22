@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/create-to-do.js":
+/*!*****************************!*\
+  !*** ./src/create-to-do.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createTodo)\n/* harmony export */ });\n\n\nfunction createTodo() {\n  class Todo {\n    constructor(title, description, dueDate, priority) {\n      this.title = title;\n      this.description = description;\n      this.dueDate = dueDate;\n      this.priority = priority;\n    }\n  }\n\n  let todo1 = new Todo(\n    \"Javascript\",\n    \"Learn javascript\",\n    new Date(\"2024-01-23\"),\n    true\n  );\n\n  console.log(todo1.title);\n  console.log(todo1.description);\n  console.log(todo1.dueDate);\n  console.log(todo1.priority);\n}\n\n\n//# sourceURL=webpack://project-todo-list/./src/create-to-do.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   pageLoad: () => (/* binding */ pageLoad)\n/* harmony export */ });\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './createBook'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\nfunction pageLoad() {\n  const content = document.getElementById(\"content\");\n  Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './createBook'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n\n//# sourceURL=webpack://project-todo-list/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   pageLoad: () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _create_to_do__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create-to-do */ \"./src/create-to-do.js\");\n\n\n\n\nfunction pageLoad() {\n  const content = document.getElementById(\"content\");\n  (0,_create_to_do__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n\n//# sourceURL=webpack://project-todo-list/./src/page-load.js?");
 
 /***/ })
 
