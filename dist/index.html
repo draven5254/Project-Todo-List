@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/to-do-list.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ffb85ca5dd.js"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/dist/styles/style.css" />
     <title>Todo-List</title>
   </head>
@@ -22,12 +25,9 @@
       </header>
 
       <aside id="sidebar">
-        <!-- <div class="photo">
-          <p>placeholder for image</p>
-        </div>
-        <div class="side-content">Box 1</div>
-        <div class="side-content">Box 2</div>
-        <div class="side-content">Box 3</div> -->
+        <button class="task-btn">
+          <i class="fa-solid fa-circle-plus"></i><span>Add task</span>
+        </button>
       </aside>
 
       <nav id="navbar">
@@ -38,43 +38,65 @@
         </ul>
       </nav>
 
-      <main id="main">
-        <!-- <div class="card">
-          <p class="title">Article Title</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud...
-          </p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud...
-          </p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud...
-          </p>
-        </div>
-        <div class="card">
-          <p class="title">Article Title</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud...
-          </p>
-        </div> -->
-      </main>
+      <main id="main"></main>
 
       <div class="footer">
         <p>Copyright © The Odin Project 2021</p>
+      </div>
+    </div>
+
+    <div class="add-task active">
+      <button class="btn3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 384 512">
+          <path
+            d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+        </svg>
+      </button>
+
+      <div class="task-container">
+        <h3>Task info</h3>
+        <form class="new-book-form" id="add-book-form">
+          <div class="title">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title..."
+              required />
+          </div>
+
+          <div class="author">
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author..."
+              required />
+          </div>
+
+          <div class="duedate">
+            <input
+              type="number"
+              id="duedate"
+              name="duedate"
+              placeholder="Due Date..."
+              max="2000"
+              required />
+          </div>
+
+          <div class="priority">
+            <input
+              type="number"
+              id="priority"
+              name="priority"
+              placeholder="Priority..."
+              max="2000"
+              required />
+          </div>
+        </form>
       </div>
     </div>
     <script src="main.js"></script>
