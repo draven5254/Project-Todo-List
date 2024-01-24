@@ -21,7 +21,8 @@
 .header-container {
   height: 100vh;
   background-color: var(--color-tan);
-
+  width: 100%;
+  overflow: hidden;
   transition: filter 0.7s;
 }
 
@@ -162,10 +163,6 @@ button {
   transition: all 0.6s ease;
 }
 
-.buttons {
-  float: right;
-}
-
 button:hover {
   box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
 }
@@ -224,27 +221,20 @@ button.checkbox:focus {
 /* BOOK CARD */
 
 .book-card {
+  position: relative;
   border-radius: 10px;
   box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.75);
   width: 100%;
-  height: 235px;
+  height: 180px;
   padding: 20px;
   /* text-align: center; */
 }
 
-/* .book-card p {
-  display: flex;
-  background-color: red;
-  flex-wrap: wrap;
-  width: 100px;
-} */
-
-/* .description {
-  display: flex;
-  background-color: red;
-  flex-wrap: wrap;
-  width: 100px;
-} */
+.deleteBtn {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+}
 
 /* .screen {
   height: 115px;
