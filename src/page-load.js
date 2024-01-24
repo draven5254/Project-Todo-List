@@ -1,10 +1,16 @@
 "use strict";
 
-import createTodo from "./create-to-do";
+// import createTodo from "./create-to-do";
+import uiModule from "./uiModule";
+// import localStorageModule from "./localStorageModule"
+import displayBooks from "./displayModule";
 
-export function pageLoad() {
+function pageLoad() {
   const content = document.getElementById("content");
-  createTodo();
+  // createTodo();
+  uiModule();
+  displayBooks();
+  // localStorageModule()
 }
 
 export default pageLoad;
