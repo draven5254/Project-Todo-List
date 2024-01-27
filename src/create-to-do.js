@@ -17,12 +17,8 @@ export default function createTodo() {
     bookInfo.classList.add("active");
   });
 
-  let myLibrary = [
-    // new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954),
-    // new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954),
-    // new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", 1979),
-    // new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954),
-  ];
+  // To-do list array container
+  let myLibrary = [];
 
   // Load books from localStorage when the page loads
   window.addEventListener("load", () => {
