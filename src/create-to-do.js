@@ -1,8 +1,5 @@
 "use strict";
 
-import createAddList from "./addLIst";
-import createHeader from "./header";
-
 export default function createTodo() {
   const header = document.querySelector(".header-container");
   const addBook = document.querySelector(".btn1");
