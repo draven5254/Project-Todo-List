@@ -5,7 +5,8 @@ import createHeader from "./header";
 import createAddList from "./addLIst";
 
 function pageLoad() {
-  const content = document.getElementById("content");
+  const content = document.createElement("div");
+
   createHeader();
   createAddList();
   createTodo();
