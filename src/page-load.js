@@ -2,11 +2,9 @@
 
 import createTodo from "./create-to-do";
 import createHeader from "./header";
-import createAddList from "./addLIst";
+import createAddList from "./addList";
 
 function pageLoad() {
-  const content = document.createElement("div");
-
   createHeader();
   createAddList();
   createTodo();
