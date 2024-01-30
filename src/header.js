@@ -1,7 +1,4 @@
 "use strict";
-
-import createTodo from "./create-to-do";
-
 export default function createHeader() {
   const content = document.getElementById("content");
 
