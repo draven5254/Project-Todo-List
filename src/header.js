@@ -1,20 +1,21 @@
 "use strict";
 
+import createTodo from "./create-to-do";
+
 export default function createHeader() {
-  const content = document.createElement("div");
-  content.className = "content";
+  const content = document.getElementById("content");
 
   // Create header element
   const header = document.createElement("header");
-  header.className = "header-container";
+  header.classList.add("header-container");
 
   // Create nav element
   const nav = document.createElement("nav");
-  nav.className = "navbar";
+  nav.classList.add("navbar");
 
   // Create logo div
   const logoDiv = document.createElement("div");
-  logoDiv.className = "logo";
+  logoDiv.classList.add("logo");
 
   // Create logo image
   const logoImg = document.createElement("img");
@@ -31,11 +32,11 @@ export default function createHeader() {
 
   // Create button
   const button = document.createElement("button");
-  button.className = "btn1";
+  button.classList.add("btn1");
 
   // Create icon element
   const icon = document.createElement("i");
-  icon.className = "fa-solid fa-plus";
+  icon.classList.add("fa-solid", "fa-plus");
 
   // Append icon and text to button
   button.appendChild(icon);
@@ -47,13 +48,13 @@ export default function createHeader() {
 
   // Create hero div
   const heroDiv = document.createElement("div");
-  heroDiv.className = "hero";
+  heroDiv.classList.add("hero");
   heroDiv.id = "book-container";
+
+  // Append header to body
+  content.appendChild(header);
 
   // Append nav and hero div to header
   header.appendChild(nav);
   header.appendChild(heroDiv);
-
-  // Append header to body
-  content.appendChild(header);
 }
