@@ -60,13 +60,17 @@ export default function createAddList() {
   inputDate.setAttribute("name", "date");
   inputDate.setAttribute("required", "");
 
+  // Set the minimum date to today
+  const today = new Date();
+  const minDate = today.toISOString().split("T")[0];
+  inputDate.setAttribute("min", minDate);
+
   inputDate.addEventListener("change", function () {
     const selectedDate = new Date(this.value);
-    const today = new Date(); // Get today's date
 
-    if (selectedDate < today) {
-      alert("Please select a future date.");
-    }
+    // if (selectedDate < today) {
+    //   alert("Please select a future date.");
+    // }
   });
 
   // PRIORITY
