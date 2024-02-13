@@ -1,5 +1,6 @@
 "use script";
 
+// Create Add List Components
 export default function createAddList() {
   const content = document.getElementById("content");
 
