@@ -1,4 +1,6 @@
 "use strict";
+
+// Create Header Components
 export default function createHeader() {
   const content = document.getElementById("content");
 
